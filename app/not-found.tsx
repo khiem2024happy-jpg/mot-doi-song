@@ -1,0 +1,1 @@
+import Link from 'next/link';export default function NotFound(){return <div className="shell py-28 text-center"><p className="eyebrow">404</p><h1 className="font-serif text-4xl mt-5">Trang này chưa có ở đây.</h1><p className="text-muted mt-5">Có lẽ một con đường khác đang chờ bạn.</p><Link className="inline-block mt-8 text-forest" href="/">← Trở về trang chủ</Link></div>}

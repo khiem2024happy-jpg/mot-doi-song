@@ -1,0 +1,2 @@
+import Link from 'next/link';
+export function Header(){return <header className="border-b border-[#ddd5c8]"><div className="shell flex flex-wrap items-center justify-between gap-4 py-6"><Link href="/" className="font-serif text-2xl font-bold tracking-tight">Một Đời Sống</Link><nav aria-label="Điều hướng chính" className="flex gap-5 text-sm"><Link href="/bai-viet">Bài viết</Link><Link href="/chu-de">Chủ đề</Link><Link href="/ve-du-an">Về dự án</Link></nav></div></header>}

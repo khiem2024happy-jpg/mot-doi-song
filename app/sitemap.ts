@@ -1,0 +1,1 @@
+import type {MetadataRoute} from 'next';import {site,categories} from '@/lib/site';import {getPosts} from '@/lib/posts';export default function sitemap():MetadataRoute.Sitemap{return ['','/bai-viet','/chu-de','/ve-du-an',...categories.map(c=>'/chu-de/'+c.slug),...getPosts().map(p=>'/bai-viet/'+p.slug)].map(route=>({url:site.url+route,lastModified:new Date()}));}

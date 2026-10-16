@@ -1,0 +1,3 @@
+import type {Metadata} from 'next';import './globals.css';import {Header} from '@/components/header';import {Footer} from '@/components/footer';import {site} from '@/lib/site';
+export const metadata:Metadata={metadataBase:new URL(site.url),title:{default:site.name,template:'%s | Một Đời Sống'},description:site.description,openGraph:{type:'website',locale:'vi_VN',siteName:site.name},robots:{index:true,follow:true}};
+export default function RootLayout({children}:{children:React.ReactNode}){return <html lang="vi"><body className="min-h-screen flex flex-col"><Header/><main className="flex-1">{children}</main><Footer/></body></html>}
